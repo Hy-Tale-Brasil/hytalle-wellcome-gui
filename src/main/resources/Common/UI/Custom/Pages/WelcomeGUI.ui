@@ -1,0 +1,212 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay {
+  $C.@Container {
+    Anchor: (Width: 600, Height: 600);
+
+    #Title {
+      Group {
+        $C.@Title {
+          @Text = "TALE BRASIL — AVISOS";
+        }
+      }
+    }
+
+    #Content {
+      LayoutMode: Top;
+      Padding: (Top: 20, Bottom: 20, Left: 20, Right: 20);
+
+      Group #Main {
+        LayoutMode: Top;
+        FlexWeight: 1;
+
+        // --- BOAS-VINDAS (Centralizado pelo Grupo) ---
+        Group {
+          LayoutMode: Center;
+          Padding: (Bottom: 12);
+
+          Label #WelcomeText {
+            Style: (FontSize: 20, TextColor: #ffcc00, RenderBold: true);
+            Text: "Bem-vindo ao Tale Brasil — Survival BR!";
+          }
+        }
+
+        Group {
+          LayoutMode: Center;
+          Padding: (Bottom: 15);
+
+          Label #SubWelcomeText {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "Ping BR, comunidade ativa e uma experiência survival justa. Leia rapidinho antes de entrar!";
+          }
+        }
+
+        // --- REGRAS ---
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 5);
+
+          Label #RulesHeader {
+            Style: (FontSize: 16, TextColor: #ffffff, RenderBold: true);
+            Anchor: (Width: 560);
+            Text: "Regras básicas";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 2);
+
+          Label #RuleOne {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "1. Respeite todos: sem ofensas, preconceito ou toxicidade.";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 2);
+
+          Label #RuleTwo {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "2. Proibido griefing, roubos e destruição de construções (jogue limpo).";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 12);
+
+          Label #RuleThree {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "3. Bugs/exploits = ban. Se achar algo, reporte no Discord.";
+          }
+        }
+
+        // --- COMANDOS RÁPIDOS ---
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 5);
+
+          Label #CommandsHeader {
+            Style: (FontSize: 16, TextColor: #ffffff, RenderBold: true);
+            Anchor: (Width: 560);
+            Text: "Comandos rápidos";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 2);
+
+          Label #CmdOne {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "• /help — mostra a ajuda e comandos disponíveis.";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 2);
+
+          Label #CmdTwo {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "• /ping — checa seu ping no servidor.";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 2);
+
+          Label #CmdThree {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "• /warp list — lista warps disponíveis.";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 2);
+
+          Label #CmdFour {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "• /warp go — vai para um warp.";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 2);
+
+          Label #CmdFive {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "• /simpleclaims claim — protege seu território (claim).";
+          }
+        }
+
+        Group {
+          LayoutMode: Top;
+          Padding: (Bottom: 12);
+
+          Label #CmdSix {
+            Style: (FontSize: 14, TextColor: #dddddd, Wrap: true);
+            Anchor: (Width: 560);
+            Text: "• /money e /pay — economia: ver saldo e pagar jogadores.";
+          }
+        }
+
+        // --- RODAPÉ ---
+        Group {
+          LayoutMode: Center;
+          Padding: (Top: 6);
+
+          Label #FooterText {
+            Style: (FontSize: 14, TextColor: #55aaff);
+            Text: "Entre no Discord para atualizações, eventos e suporte.";
+          }
+        }
+
+        Group {
+          LayoutMode: Center;
+
+          Label #FooterText2 {
+            Style: (FontSize: 14, TextColor: #55aaff);
+            Text: "Clique abaixo para entrar na nossa comunidade:";
+          }
+        }
+      }
+
+      Group #Buttons {
+          LayoutMode: Center; // Centraliza os botões horizontalmente
+          Padding: (Top: 20);
+
+          // Botão Discord
+          $C.@TextButton #DiscordButton {
+            Anchor: (Width: 200, Height: 40);
+            Text: "DISCORD";
+          }
+
+          // Espaçador
+          Group {
+            Anchor: (Height: 10);
+          }
+
+          // Botão Entendi
+          $C.@TextButton #CloseButton {
+            Anchor: (Width: 200, Height: 40);
+            Text: "ENTENDI";
+          }
+        }
+    }
+  }
+}

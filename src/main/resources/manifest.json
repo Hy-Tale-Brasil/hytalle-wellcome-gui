@@ -1,0 +1,20 @@
+{
+  "Group": "Hytale Brasil",
+  "Name": "Hytale Welcome Gui",
+  "Version": "1.0.4",
+  "Description": "Add Welcome GUI on player login into server",
+  "Authors": [
+    {
+      "Name": "Adryan Alencar"
+    }
+  ],
+  "Website": "https://talebrasil.com/",
+  "ServerVersion": "*",
+  "Dependencies": {
+    "Hytale:EntityModule": "*"
+  },
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "com.talebrasil.hy.wellcomegui.Main",
+  "IncludesAssetPack": true
+}
