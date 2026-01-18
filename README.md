@@ -15,7 +15,7 @@ Currently configured for the **Tale Brasil** server, it displays rules, useful c
 * **ENTENDI** (Understood) Button: Closes the window.
 
 
-* **Command:** Manual access to the screen via command (default: `/modlist`).
+* **Command:** Manual access to the screen via command (default: `/wellcome`).
 
 ## 🛠 How to Modify the Welcome Screen
 
@@ -61,10 +61,10 @@ if (data.discordClicked != null) {
 
 ### 3. Changing the Command
 
-By default, the command registered in `WellcomeCommand.java` is `/modlist`. To change it to `/rules` or `/welcome`:
+By default, the command registered in `WellcomeCommand.java` is `/wellcome`. To change it to `/rules` or `/welcome`:
 
 * **File:** `src/main/java/com/talebrasil/hy/wellcomegui/command/WellcomeCommand.java`
-* **Edit:** `super("modlist", "Shows the wellcome screen");` to your desired command name.
+* **Edit:** `super("wellcome", "Shows the wellcome screen");` to your desired command name.
 
 ## 🚀 How to Build
 
@@ -95,7 +95,7 @@ Atualmente configurado para o servidor **Tale Brasil**, ele exibe regras, comand
 * **Interatividade:**
     * Botão **DISCORD**: Envia uma mensagem clicável no chat com o link do Discord.
     * Botão **ENTENDI**: Fecha a janela.
-* **Comando:** Acesso manual à tela através do comando configurado (padrão: `/modlist`).
+* **Comando:** Acesso manual à tela através do comando configurado (padrão: `/wellcome`).
 
 ## 🛠 Como Modificar a Tela de Boas-Vindas
 
@@ -139,10 +139,10 @@ if (data.discordClicked != null) {
 
 ### 3. Alterar o Comando
 
-Por padrão, o comando registrado no arquivo `WellcomeCommand.java` é `/modlist`. Para alterar para `/regras` ou `/welcome`:
+Por padrão, o comando registrado no arquivo `WellcomeCommand.java` é `/wellcome`. Para alterar para `/regras` ou `/welcome`:
 
 * **Arquivo:** `src/main/java/com/talebrasil/hy/wellcomegui/command/WellcomeCommand.java`
-* **Edite:** `super("modlist", "Shows the wellcome screen");` para o nome desejado.
+* **Edite:** `super("wellcome", "Shows the wellcome screen");` para o nome desejado.
 
 ## 🚀 Como Compilar
 

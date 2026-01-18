@@ -21,7 +21,7 @@ import static com.hypixel.hytale.server.core.command.commands.player.inventory.I
 public class WellcomeCommand extends AbstractAsyncCommand {
 
     public WellcomeCommand() {
-        super("modlist", "Shows the wellcome screen");
+        super("wellcome", "Shows the wellcome screen");
         this.setPermissionGroup(GameMode.Adventure);
     }
 
